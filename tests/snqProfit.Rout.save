@@ -1,7 +1,7 @@
 
-R version 2.10.1 (2009-12-14)
-Copyright (C) 2009 The R Foundation for Statistical Computing
-ISBN 3-900051-07-0
+R version 3.0.2 (2013-09-25) -- "Frisbee Sailing"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -22,25 +22,15 @@ Loading required package: lattice
 Loading required package: car
 Loading required package: lmtest
 Loading required package: zoo
+
+Attaching package: 'zoo'
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
 Loading required package: miscTools
 Loading required package: micEcon
-Loading required package: np
-Loading required package: boot
-
-Attaching package: 'boot'
-
-
-	The following object(s) are masked from package:car :
-
-	 logit 
-
-
-	The following object(s) are masked from package:lattice :
-
-	 melanoma 
-
-Loading required package: cubature
-Nonparametric Kernel Methods for Mixed Datatypes (version 0.30-7)
 Loading required package: MASS
 > data( germanFarms )
 > options( digits = 3 )
@@ -105,7 +95,7 @@ $qMeans
 
 $fMeans
 land 
-29.0 
+  29 
 
 $est
 
@@ -142,6 +132,7 @@ eq3 -0.434  0.854  1.000
 SUR estimates for 'eq1' (equation 1)
 Model Formula: q1 ~ pr1 + pr2 + pr3 + pq1.1.1 + pq1.1.2 + pq1.1.3 + pq1.2.1 + 
     pq1.2.2 + pq1.2.3 + pq1.3.1 + pq1.3.2 + pq1.3.3 + f1 + fq1.1.1
+<environment: 0x6c6f800>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)   -97327      37624   -2.59    0.013 *  
@@ -160,17 +151,18 @@ pq1.3.3         -164        607   -0.27    0.788
 f1            302864      70361    4.30  7.8e-05 ***
 fq1.1.1      -246612      96602   -2.55    0.014 *  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 5447.602 on 5 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 5 
-SSR: 415469073.132 MSE: 29676362.367 Root MSE: 5447.602 
+SSR: 415469073.133 MSE: 29676362.367 Root MSE: 5447.602 
 Multiple R-Squared: 0.975 Adjusted R-Squared: 0.966 
 
 
 SUR estimates for 'eq2' (equation 2)
 Model Formula: q2 ~ pr1 + pr2 + pr3 + pq2.1.1 + pq2.1.2 + pq2.1.3 + pq2.2.1 + 
     pq2.2.2 + pq2.2.3 + pq2.3.1 + pq2.3.2 + pq2.3.3 + f1 + fq2.1.1
+<environment: 0x6c6f800>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)   -86798      17778   -4.88  1.1e-05 ***
@@ -189,17 +181,18 @@ pq2.3.3         -164        607   -0.27    0.788
 f1             75897      31322    2.42    0.019 *  
 fq2.1.1      -246612      96602   -2.55    0.014 *  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 4697.966 on 5 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 5 
-SSR: 308992413.743 MSE: 22070886.696 Root MSE: 4697.966 
+SSR: 308992413.744 MSE: 22070886.696 Root MSE: 4697.966 
 Multiple R-Squared: 0.449 Adjusted R-Squared: 0.252 
 
 
 SUR estimates for 'eq3' (equation 3)
 Model Formula: q3 ~ pr1 + pr2 + pr3 + pq3.1.1 + pq3.1.2 + pq3.1.3 + pq3.2.1 + 
     pq3.2.2 + pq3.2.3 + pq3.3.1 + pq3.3.2 + pq3.3.3 + f1 + fq3.1.1
+<environment: 0x6c6f800>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)   -19345       3775   -5.12  4.8e-06 ***
@@ -218,7 +211,7 @@ pq3.3.3         -164        607   -0.27    0.788
 f1             15420       6930    2.23    0.031 *  
 fq3.1.1      -246612      96602   -2.55    0.014 *  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 712.301 on 5 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 5 
@@ -647,6 +640,7 @@ eq3  0.343  0.722 1.000
 SUR estimates for 'eq1' (equation 1)
 Model Formula: q1 ~ pr1 + pr2 + pr3 + pq1.1.1 + pq1.1.2 + pq1.1.3 + pq1.2.1 + 
     pq1.2.2 + pq1.2.3 + pq1.3.1 + pq1.3.2 + pq1.3.3
+<environment: 0x7740d78>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)    90398       4318   20.94  < 2e-16 ***
@@ -663,17 +657,18 @@ pq1.3.1        25378       2710    9.36  6.7e-13 ***
 pq1.3.2       -16016       2776   -5.77  4.0e-07 ***
 pq1.3.3        -9362        857  -10.92  2.7e-15 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 10567.122 on 7 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 7 
-SSR: 1786625218.893 MSE: 111664076.181 Root MSE: 10567.122 
+SSR: 1786625218.892 MSE: 111664076.181 Root MSE: 10567.122 
 Multiple R-Squared: 0.891 Adjusted R-Squared: 0.871 
 
 
 SUR estimates for 'eq2' (equation 2)
 Model Formula: q2 ~ pr1 + pr2 + pr3 + pq2.1.1 + pq2.1.2 + pq2.1.3 + pq2.2.1 + 
     pq2.2.2 + pq2.2.3 + pq2.3.1 + pq2.3.2 + pq2.3.3
+<environment: 0x7740d78>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)   -38324       2426  -15.80  < 2e-16 ***
@@ -690,7 +685,7 @@ pq2.3.1        25378       2710    9.36  6.7e-13 ***
 pq2.3.2       -16016       2776   -5.77  4.0e-07 ***
 pq2.3.3        -9362        857  -10.92  2.7e-15 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 4928.445 on 7 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 7 
@@ -701,6 +696,7 @@ Multiple R-Squared: 0.307 Adjusted R-Squared: 0.177
 SUR estimates for 'eq3' (equation 3)
 Model Formula: q3 ~ pr1 + pr2 + pr3 + pq3.1.1 + pq3.1.2 + pq3.1.3 + pq3.2.1 + 
     pq3.2.2 + pq3.2.3 + pq3.3.1 + pq3.3.2 + pq3.3.3
+<environment: 0x7740d78>
 
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)      952       1786    0.53    0.596    
@@ -717,7 +713,7 @@ pq3.3.1        25378       2710    9.36  6.7e-13 ***
 pq3.3.2       -16016       2776   -5.77  4.0e-07 ***
 pq3.3.3        -9362        857  -10.92  2.7e-15 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 6153.133 on 7 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 7 
@@ -1156,6 +1152,7 @@ SUR estimates for 'eq1' (equation 1)
 Model Formula: q1 ~ pr1 + pr2 + pr3 + pq1.1.1 + pq1.1.2 + pq1.1.3 + pq1.2.1 + 
     pq1.2.2 + pq1.2.3 + pq1.3.1 + pq1.3.2 + pq1.3.3 + f1 + f2 + 
     fq1.1.1 + fq1.1.2 + fq1.2.1 + fq1.2.2
+<environment: 0x746b4a0>
 
             Estimate Std. Error t value Pr(>|t|)
 (Intercept)   -79970     115640   -0.69     0.49
@@ -1180,7 +1177,7 @@ fq1.2.2       -96006      61790   -1.55     0.13
 
 Residual standard error: 4222.034 on 1 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 1 
-SSR: 196081253.398 MSE: 17825568.491 Root MSE: 4222.034 
+SSR: 196081253.396 MSE: 17825568.491 Root MSE: 4222.034 
 Multiple R-Squared: 0.988 Adjusted R-Squared: 0.979 
 
 
@@ -1188,6 +1185,7 @@ SUR estimates for 'eq2' (equation 2)
 Model Formula: q2 ~ pr1 + pr2 + pr3 + pq2.1.1 + pq2.1.2 + pq2.1.3 + pq2.2.1 + 
     pq2.2.2 + pq2.2.3 + pq2.3.1 + pq2.3.2 + pq2.3.3 + f1 + f2 + 
     fq2.1.1 + fq2.1.2 + fq2.2.1 + fq2.2.2
+<environment: 0x746b4a0>
 
             Estimate Std. Error t value Pr(>|t|)  
 (Intercept)   -85852      50775   -1.69    0.098 .
@@ -1210,11 +1208,11 @@ fq2.1.2       254125     236788    1.07    0.289
 fq2.2.1       254125     236788    1.07    0.289  
 fq2.2.2       -96006      61790   -1.55    0.127  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 5038.67 on 1 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 1 
-SSR: 279270123.114 MSE: 25388193.01 Root MSE: 5038.67 
+SSR: 279270123.115 MSE: 25388193.01 Root MSE: 5038.67 
 Multiple R-Squared: 0.502 Adjusted R-Squared: 0.14 
 
 
@@ -1222,6 +1220,7 @@ SUR estimates for 'eq3' (equation 3)
 Model Formula: q3 ~ pr1 + pr2 + pr3 + pq3.1.1 + pq3.1.2 + pq3.1.3 + pq3.2.1 + 
     pq3.2.2 + pq3.2.3 + pq3.3.1 + pq3.3.2 + pq3.3.3 + f1 + f2 + 
     fq3.1.1 + fq3.1.2 + fq3.2.1 + fq3.2.2
+<environment: 0x746b4a0>
 
             Estimate Std. Error t value Pr(>|t|)  
 (Intercept)   -20576      11158   -1.84    0.072 .
@@ -1244,7 +1243,7 @@ fq3.1.2       254125     236788    1.07    0.289
 fq3.2.1       254125     236788    1.07    0.289  
 fq3.2.2       -96006      61790   -1.55    0.127  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 623.597 on 1 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 1 
@@ -1571,9 +1570,9 @@ qLabor      0.222     0.202 0.0874
 
 $tval
           pOutput pVarInput pLabor
-qOutput     0.774    -0.580  -1.07
-qVarInput   0.580    -0.423  -0.73
-qLabor      1.069    -0.731  -1.02
+qOutput     0.774    -0.580 -1.069
+qVarInput   0.580    -0.423 -0.731
+qLabor      1.069    -0.731 -1.022
 
 $pval
           pOutput pVarInput pLabor
@@ -1856,6 +1855,7 @@ SUR estimates for 'eq1' (equation 1)
 Model Formula: q1 ~ pr1 + pr2 + pr3 + pq1.1.1 + pq1.1.2 + pq1.1.3 + pq1.2.1 + 
     pq1.2.2 + pq1.2.3 + pq1.3.1 + pq1.3.2 + pq1.3.3 + f1 + f2 + 
     fq1.1.1 + fq1.1.2 + fq1.2.1 + fq1.2.2
+<environment: 0x74598a0>
 
             Estimate Std. Error t value Pr(>|t|)
 (Intercept)   -97025     145396   -0.67     0.51
@@ -1888,6 +1888,7 @@ SUR estimates for 'eq2' (equation 2)
 Model Formula: q2 ~ pr1 + pr2 + pr3 + pq2.1.1 + pq2.1.2 + pq2.1.3 + pq2.2.1 + 
     pq2.2.2 + pq2.2.3 + pq2.3.1 + pq2.3.2 + pq2.3.3 + f1 + f2 + 
     fq2.1.1 + fq2.1.2 + fq2.2.1 + fq2.2.2
+<environment: 0x74598a0>
 
             Estimate Std. Error t value Pr(>|t|)  
 (Intercept)   -71025      54698   -1.30    0.202  
@@ -1910,7 +1911,7 @@ fq2.1.2       169982      79244    2.15    0.038 *
 fq2.2.1       169982      79244    2.15    0.038 *
 fq2.2.2       -11463      21296   -0.54    0.593  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 1196.639 on 1 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 1 
@@ -1922,6 +1923,7 @@ SUR estimates for 'eq3' (equation 3)
 Model Formula: q3 ~ pr1 + pr2 + pr3 + pq3.1.1 + pq3.1.2 + pq3.1.3 + pq3.2.1 + 
     pq3.2.2 + pq3.2.3 + pq3.3.1 + pq3.3.2 + pq3.3.3 + f1 + f2 + 
     fq3.1.1 + fq3.1.2 + fq3.2.1 + fq3.2.2
+<environment: 0x74598a0>
 
             Estimate Std. Error t value Pr(>|t|)  
 (Intercept)   -11871      11670   -1.02    0.315  
@@ -1944,7 +1946,7 @@ fq3.1.2        28813      15785    1.83    0.076 .
 fq3.2.1        28813      15785    1.83    0.076 .
 fq3.2.2        -5565       4162   -1.34    0.189  
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Residual standard error: 246.064 on 1 degrees of freedom
 Number of observations: 20 Degrees of Freedom: 1 
@@ -2030,7 +2032,7 @@ gamma 3 1 2  5.21e+05 -6.59e+05 -6.12e+05 -2.05e+04 -2.56e+02    20746
 gamma 3 2 1  5.21e+05 -6.59e+05 -6.12e+05 -2.05e+04 -2.56e+02    20746
 gamma 3 2 2 -4.16e+05  5.13e+05  4.70e+05  2.66e+04 -6.20e+03   -20393
              beta 2 1  beta 2 2 beta 2 3 beta 3 1 beta 3 2 beta 3 3 delta 1 1
-alpha 1      7.16e+07 -6.31e+07 -8486552  9288379 -8486552  -801826 -2.18e+09
+alpha 1      7.16e+07 -6.31e+07 -8486553  9288379 -8486553  -801826 -2.18e+09
 alpha 2     -6.78e+07  6.21e+07  5741360 -5998573  5741360   257212  1.81e+08
 alpha 3     -1.52e+06  7.20e+05   804518 -1198890   804518   394372  1.09e+07
 beta 1 1    -1.86e+08  1.83e+08  3712411 -4268284  3712411   555873  2.21e+07
@@ -2432,9 +2434,9 @@ qLabor      0.113     0.106 0.0490
 
 $tval
           pOutput pVarInput pLabor
-qOutput      1.21    -0.890  -1.56
-qVarInput    0.89    -0.665  -0.96
-qLabor       1.56    -0.961  -1.51
+qOutput      1.21    -0.890 -1.556
+qVarInput    0.89    -0.665 -0.961
+qLabor       1.56    -0.961 -1.507
 
 $pval
           pOutput pVarInput pLabor
@@ -2609,3 +2611,197 @@ qLabor      -2201       688    290
 19  -569 7347
 20 -2047 9764
 > 
+> ########### without scaling prices ########################
+> estResultNoScale <- snqProfitEst( pNamesT, qNamesT, fNamesT, data=germanFarms,
++    scalingFactors = rep( 1, 3 ) )
+> print( estResultNoScale )
+
+Estimation results of the SNQ profit function:
+Functional form: default (0)
+Estimation method: SUR
+
+Estimated coefficients:
+             value std.err t-value  prob
+alpha 1   -256.249 1122.47 -0.2283 0.820
+alpha 2   -335.542  938.38 -0.3576 0.722
+alpha 3    -39.247   79.31 -0.4948 0.623
+beta 1 1    57.357 4516.71  0.0127 0.990
+beta 1 2   -77.227 4563.57 -0.0169 0.987
+beta 1 3    19.870   61.78  0.3216 0.749
+beta 2 1   -77.227 4563.57 -0.0169 0.987
+beta 2 2    98.336 4611.40  0.0213 0.983
+beta 2 3   -21.109   62.76 -0.3364 0.738
+beta 3 1    19.870   61.78  0.3216 0.749
+beta 3 2   -21.109   62.76 -0.3364 0.738
+beta 3 3     1.240    3.07  0.4035 0.689
+delta 1 1   42.033   82.35  0.5104 0.612
+delta 1 2   32.628   79.88  0.4084 0.685
+delta 2 1    1.707   36.96  0.0462 0.963
+delta 2 2   -2.811   37.93 -0.0741 0.941
+delta 3 1    0.943    7.83  0.1204 0.905
+delta 3 2    0.673    7.69  0.0875 0.931
+gamma 1 1    0.210    6.43  0.0326 0.974
+gamma 1 2   -0.107    5.93 -0.0180 0.986
+gamma 2 1   -0.107    5.93 -0.0180 0.986
+gamma 2 2   -2.454    4.84 -0.5068 0.615
+
+R-squared values of the netput equations:
+  qOutput qVarInput    qLabor    profit 
+    0.987     0.556  -211.249   -20.680 
+
+Price elasticities of the netputs:
+          pOutput pVarInput   pLabor
+qOutput   -0.0107   0.00517  0.00556
+qVarInput -0.0101  -0.03164  0.04176
+qLabor    -0.0241   0.09247 -0.06838
+
+warning: this profit function is not convex in netput prices.
+
+> estResultNoScale2 <- snqProfitEst( pNamesT, qNamesT, fNamesT, data=germanFarms,
++    base = NULL, weights = snqProfitWeights( pNamesT, qNamesT, germanFarms ) )
+> print( estResultNoScale2 )
+
+Estimation results of the SNQ profit function:
+Functional form: default (0)
+Estimation method: SUR
+
+Estimated coefficients:
+             value std.err t-value  prob
+alpha 1   -256.249 1122.47 -0.2283 0.820
+alpha 2   -335.542  938.38 -0.3576 0.722
+alpha 3    -39.247   79.31 -0.4948 0.623
+beta 1 1    57.357 4516.71  0.0127 0.990
+beta 1 2   -77.227 4563.57 -0.0169 0.987
+beta 1 3    19.870   61.78  0.3216 0.749
+beta 2 1   -77.227 4563.57 -0.0169 0.987
+beta 2 2    98.336 4611.40  0.0213 0.983
+beta 2 3   -21.109   62.76 -0.3364 0.738
+beta 3 1    19.870   61.78  0.3216 0.749
+beta 3 2   -21.109   62.76 -0.3364 0.738
+beta 3 3     1.240    3.07  0.4035 0.689
+delta 1 1   42.033   82.35  0.5104 0.612
+delta 1 2   32.628   79.88  0.4084 0.685
+delta 2 1    1.707   36.96  0.0462 0.963
+delta 2 2   -2.811   37.93 -0.0741 0.941
+delta 3 1    0.943    7.83  0.1204 0.905
+delta 3 2    0.673    7.69  0.0875 0.931
+gamma 1 1    0.210    6.43  0.0326 0.974
+gamma 1 2   -0.107    5.93 -0.0180 0.986
+gamma 2 1   -0.107    5.93 -0.0180 0.986
+gamma 2 2   -2.454    4.84 -0.5068 0.615
+
+R-squared values of the netput equations:
+  qOutput qVarInput    qLabor    profit 
+    0.987     0.556  -211.249   -20.680 
+
+Price elasticities of the netputs:
+          pOutput pVarInput   pLabor
+qOutput   -0.0107   0.00517  0.00556
+qVarInput -0.0101  -0.03164  0.04176
+qLabor    -0.0241   0.09247 -0.06838
+
+warning: this profit function is not convex in netput prices.
+
+> all.equal( estResultNoScale[-20], estResultNoScale2[] )
+[1] TRUE
+> 
+> ########### with manually chosen scaling factors ###################
+> estResultNoScale10 <- snqProfitEst( pNamesT, qNamesT, fNamesT, data=germanFarms,
++    scalingFactors = rep( 10, 3 ) )
+> print( estResultNoScale10 )
+
+Estimation results of the SNQ profit function:
+Functional form: default (0)
+Estimation method: SUR
+
+Estimated coefficients:
+             value std.err t-value  prob
+alpha 1   -25.6249 112.247 -0.2283 0.820
+alpha 2   -33.5541  93.839 -0.3576 0.722
+alpha 3    -3.9247   7.931 -0.4948 0.623
+beta 1 1    5.7359 451.677  0.0127 0.990
+beta 1 2   -7.7228 456.363 -0.0169 0.987
+beta 1 3    1.9870   6.178  0.3216 0.749
+beta 2 1   -7.7228 456.363 -0.0169 0.987
+beta 2 2    9.8338 461.146  0.0213 0.983
+beta 2 3   -2.1109   6.276 -0.3364 0.738
+beta 3 1    1.9870   6.178  0.3216 0.749
+beta 3 2   -2.1109   6.276 -0.3364 0.738
+beta 3 3    0.1240   0.307  0.4035 0.689
+delta 1 1   4.2033   8.235  0.5104 0.612
+delta 1 2   3.2628   7.988  0.4084 0.685
+delta 2 1   0.1707   3.696  0.0462 0.963
+delta 2 2  -0.2811   3.793 -0.0741 0.941
+delta 3 1   0.0943   0.783  0.1204 0.905
+delta 3 2   0.0673   0.769  0.0875 0.931
+gamma 1 1   0.0210   0.643  0.0326 0.974
+gamma 1 2  -0.0107   0.593 -0.0180 0.986
+gamma 2 1  -0.0107   0.593 -0.0180 0.986
+gamma 2 2  -0.2454   0.484 -0.5068 0.615
+
+R-squared values of the netput equations:
+  qOutput qVarInput    qLabor    profit 
+    0.987     0.556  -211.249   -20.680 
+
+Price elasticities of the netputs:
+          pOutput pVarInput   pLabor
+qOutput   -0.0107   0.00517  0.00556
+qVarInput -0.0101  -0.03164  0.04176
+qLabor    -0.0241   0.09247 -0.06838
+
+warning: this profit function is not convex in netput prices.
+
+> all.equal( estResultNoScale[-c(1,2,4,5,6,7,9,14,22)], 
++    estResultNoScale10[-c(1,2,4,5,6,7,9,14,22)], tol = 1e-4 )
+[1] TRUE
+> 
+> estResultNoScale123 <- snqProfitEst( pNamesT, qNamesT, fNamesT, data=germanFarms,
++    scalingFactors = c( 1, 2, 3 ) )
+> print( estResultNoScale123 )
+
+Estimation results of the SNQ profit function:
+Functional form: default (0)
+Estimation method: SUR
+
+Estimated coefficients:
+             value std.err  t-value  prob
+alpha 1   -531.522 3991.83 -0.13315 0.895
+alpha 2    -16.623 2929.83 -0.00567 0.995
+alpha 3    -46.372  122.06 -0.37990 0.706
+beta 1 1  -286.097 5438.85 -0.05260 0.958
+beta 1 2   260.594 5247.39  0.04966 0.961
+beta 1 3    25.503  198.38  0.12856 0.898
+beta 2 1   260.594 5247.39  0.04966 0.961
+beta 2 2  -234.313 5063.38 -0.04628 0.963
+beta 2 3   -26.280  190.73 -0.13779 0.891
+beta 3 1    25.503  198.38  0.12856 0.898
+beta 3 2   -26.280  190.73 -0.13779 0.891
+beta 3 3     0.777    9.37  0.08293 0.934
+delta 1 1   46.472   97.55  0.47642 0.636
+delta 1 2   36.279   95.12  0.38142 0.705
+delta 2 1    4.471   41.86  0.10681 0.915
+delta 2 2    1.794   42.06  0.04265 0.966
+delta 3 1    1.343    9.29  0.14461 0.886
+delta 3 2    1.008    9.16  0.11003 0.913
+gamma 1 1    0.297    7.63  0.03897 0.969
+gamma 1 2   -0.214    7.07 -0.03027 0.976
+gamma 2 1   -0.214    7.07 -0.03027 0.976
+gamma 2 2   -3.305    5.82 -0.56809 0.573
+
+R-squared values of the netput equations:
+  qOutput qVarInput    qLabor    profit 
+    0.989     0.348 -3488.487  -322.352 
+
+Price elasticities of the netputs:
+          pOutput pVarInput  pLabor
+qOutput   -0.0130  0.016575 -0.0036
+qVarInput -0.0324 -0.000896  0.0333
+qLabor     0.0156  0.073759 -0.0893
+
+warning: this profit function is not convex in netput prices.
+
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  3.108   0.072   3.173 
