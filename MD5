@@ -1,6 +1,6 @@
-f5994ee99f4991b6299b07469dd17126 *DESCRIPTION
-8a919bfd89b2f33129708d9664ec2e7c *NAMESPACE
-5033f11cf695a322a54187f9d6f11125 *NEWS
+0a38353b8725cd85a9923663f6f0d0d0 *DESCRIPTION
+226579c9fe2c656dc6be4a4239311708 *NAMESPACE
+8a45763d8bc891bc91214f074f551de7 *NEWS
 17ea0094d884d23b71bdd88703df1a57 *R/predict.snqProfitEst.R
 6282faceb4a12ef90039561da716d32c *R/print.snqProfitEst.R
 184084ce4c86da139a4f8cbbbe2b7381 *R/print.snqProfitImposeConvexity.R
@@ -34,8 +34,7 @@ c1131a36ad074c48e7c68304b0748516 *man/snqProfitEla.Rd
 a4169eaba5b8604d87a755c383e65ac2 *man/snqProfitFixEla.Rd
 72aeed00f3a93d32194c83333769eeb1 *man/snqProfitHessian.Rd
 f65fe059aa37fc10d512e0d041e91fe3 *man/snqProfitHessianDeriv.Rd
-62dd31932ed8a67e2411a4f31494ac0e *man/snqProfitImposeConvexity.Rd
+6def0440e79dc33b0966bb250e6cb96c *man/snqProfitImposeConvexity.Rd
 291df3d024816c545b2e6eda0d4155ca *man/snqProfitShadowPrices.Rd
 05ef1a688c1c1fb7783fbfe276c836ed *man/snqProfitWeights.Rd
 2285ad285d2030a39a59025ed90f058d *tests/snqProfit.R
-3629accb98abea65c82fdabda00ff865 *tests/snqProfit.Rout.save
